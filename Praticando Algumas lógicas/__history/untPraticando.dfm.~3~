@@ -1,0 +1,40 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  TextHeight = 15
+  object MainMenu1: TMainMenu
+    Left = 296
+    Top = 208
+    object aaaaaaaa1: TMenuItem
+      Caption = 'Edit'
+      object Save1: TMenuItem
+        Caption = 'Save'
+      end
+      object Saveas1: TMenuItem
+        Caption = 'Save as '
+      end
+      object Saveas2: TMenuItem
+        Caption = 'Save all'
+      end
+    end
+    object Files1: TMenuItem
+      Caption = 'Files'
+    end
+    object Algorithms1: TMenuItem
+      Caption = 'Algorithms'
+    end
+    object Algorithms2: TMenuItem
+      Caption = 'Algorithms'
+    end
+  end
+end

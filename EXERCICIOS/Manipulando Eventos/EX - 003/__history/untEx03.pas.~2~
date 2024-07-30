@@ -1,0 +1,30 @@
+unit untEx03;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmEXERCICIO03 = class(TForm)
+    btn1: TButton;
+    btn2: TButton;
+    Button3: TButton;
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmEXERCICIO03: TfrmEXERCICIO03;
+
+implementation
+
+{$R *.dfm}
+
+end.

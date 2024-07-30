@@ -1,0 +1,62 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  TextHeight = 15
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 423
+    Width = 628
+    Height = 19
+    Panels = <
+      item
+        Text = 'Versao 1.0.0.0'
+        Width = 50
+      end>
+    ExplicitLeft = 8
+  end
+  object MainMenu1: TMainMenu
+    object aaaaaaaa1: TMenuItem
+      Caption = 'Edit'
+      object Save1: TMenuItem
+        Caption = 'Zoom'
+      end
+      object Saveas1: TMenuItem
+        Caption = 'Settings'
+      end
+      object Saveas2: TMenuItem
+        Caption = 'Object'
+      end
+    end
+    object Files1: TMenuItem
+      Caption = 'Files'
+      object Save2: TMenuItem
+        Caption = 'Save'
+      end
+      object Save3: TMenuItem
+        Caption = 'Save as '
+      end
+      object Saveall1: TMenuItem
+        Caption = 'Save all'
+      end
+      object Render1: TMenuItem
+        Caption = 'Render'
+      end
+    end
+    object Algorithms1: TMenuItem
+      Caption = 'Algorithms'
+    end
+    object Algorithms2: TMenuItem
+      Caption = 'Help'
+    end
+  end
+end

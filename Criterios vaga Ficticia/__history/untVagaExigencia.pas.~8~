@@ -1,0 +1,73 @@
+unit untVagaExigencia;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.Win.TaskbarCore,
+  Vcl.Taskbar, Vcl.Menus, Vcl.ComCtrls, Vcl.ToolWin;
+
+type
+  Tfrm2 = class(TForm)
+    edt1: TEdit;
+    Label1: TLabel;
+    edt2: TEdit;
+    edt3: TEdit;
+    edt4: TEdit;
+    btn1: TButton;
+    StatusBar1: TStatusBar;
+    procedure btn1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm2: Tfrm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfrm2.btn1Click(Sender: TObject);
+var
+    exige1, exige2, exige3, exige4: string;
+begin
+    btn1.Color :=clGreen;
+    exige1 := 'Pontual';
+    exige2 := 'Esforçado';
+    exige3 := 'Proatividade';
+    exige4 := 'Pragmático';
+
+    edt1.Text := exige1;
+    edt2.Text := exige2;
+    edt3.Text := exige3;
+    edt4.Text := exige4;
+
+    if  (edt1.Text = exige1)
+    and (edt2.Text = exige2)
+    and (edt3.Text = exige3)
+    and (edt4.Text = exige4) then
+      begin
+      showmessage('CONTRATADO!!!');
+      end
+    else
+      begin
+      showmessage('INFELIZMENTE NÃO POSSUI O PERFIL DA EMPRESA');
+    end;
+
+
+
+
+
+
+end;
+
+procedure Tfrm2.FormCreate(Sender: TObject);
+begin
+    frm2.Color := clPurple;
+end;
+
+end.

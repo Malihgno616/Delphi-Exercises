@@ -1,0 +1,43 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 168
+    Top = 37
+    Width = 71
+    Height = 32
+    Caption = 'VETOR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object TMemo
+    Left = 280
+    Top = 48
+    Width = 185
+    Height = 89
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 168
+    Top = 88
+    Width = 75
+    Height = 25
+    Caption = 'VETOR'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,42 @@
+unit untFunctions;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TfrmMyForm = class(TForm)
+    lbl1: TLabel;
+    MainMenu1: TMainMenu;
+    C1: TMenuItem;
+    Function1: TMenuItem;
+    Array1: TMenuItem;
+    Memo1: TMemo;
+    btn1: TButton;
+    procedure btn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMyForm: TfrmMyForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMyForm.btn1Click(Sender: TObject);
+function listas(A: array of string) :string;
+var
+    x:integer;
+begin
+    setlength(A, 3)
+    A[1];
+
+end;
+
+end.
